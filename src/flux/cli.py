@@ -96,7 +96,7 @@ def parse_prompt(options: SamplingOptions) -> SamplingOptions | None:
 @torch.inference_mode()
 def main(
     name: str = "flux-schnell",
-    width: int = 1360,
+    width: int = 1344,
     height: int = 768,
     seed: int | None = None,
     prompt: str = (
