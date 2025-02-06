@@ -75,8 +75,6 @@ def main(
         additional_prompts = prompt[1:]
         prompt = prompt[0]
 
-    nsfw_classifier = pipeline("image-classification", model="Falconsai/nsfw_image_detection", device=device)
-
     if name not in configs:
         available = ", ".join(configs.keys())
         raise ValueError(f"Got unknown model name: {name}, chose from {available}")
