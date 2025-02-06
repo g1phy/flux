@@ -7,7 +7,6 @@ from glob import iglob
 import torch
 from cuda import cudart
 from fire import Fire
-from transformers import pipeline
 
 from flux.sampling import denoise, get_noise, get_schedule, prepare, unpack
 from flux.trt.trt_manager import TRTManager
