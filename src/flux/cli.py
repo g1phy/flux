@@ -108,7 +108,7 @@ def main(
     loop: bool = False,
     guidance: float = 3.5,
     offload: bool = False,
-    output_dir: str = "output",
+    output_dir: str = "/app/output",
     add_sampling_metadata: bool = True,
     trt: bool = False,
     trt_transformer_precision: str = "bf16",
