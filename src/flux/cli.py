@@ -219,7 +219,7 @@ def main(
             fn = output_name.format(idx=idx)
             print(f"Done in {t1 - t0:.1f}s. Saving {fn}")
 
-            idx = save_image_without_classifier(nsfw_classifier, name, output_name, idx, x, add_sampling_metadata, prompt)
+            idx = save_image_without_classifier(name, output_name, idx, x, add_sampling_metadata, prompt)
 
         if additional_prompts:
             next_prompt = additional_prompts.pop(0)
